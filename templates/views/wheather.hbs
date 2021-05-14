@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>scripts}}
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+{{>navbar}}
+  <!-- main-header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" name="" id="CityName"  placeholder="Enter Your City Name" autocomplete="off">
+                        <input type="submit" value="search" id="searchbtn">
+                    </form>
+                </div>
+                <div class="tempinformation">
+                    <div class="top_layer">
+                        <p id="day">saturday</p>
+                        <p id="today_date">1 may</p>
+                    </div>
+                    <div class="main_layer ">
+                        <p id="city_name">Check Here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{>footer}}
+{{!-- <i class='fas fa-cloud' style='color:#eccc68;'></i>
+<i class='fas fa-cloud-rain' style='color: #a4b@be;'></i>
+<i class='fas fa-sun' style='color: #eccc68;'></i> --}}
+
+<script src="js/main.js"></script>
+<script>
+    var d = new Date();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+document.getElementById("day").innerHTML = days[d.getDay()];
+
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+document.getElementById("today_date").innerHTML = d.toLocaleDateString();
+</script>
+
+</body>
+</html>
