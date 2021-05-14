@@ -1,0 +1,110 @@
+.navbar-toggler {
+  background-color: grey;
+}
+
+button{
+    color: black;
+    border-radius: 10px;
+    box-shadow:0 8px 6px -6px #000  ;
+    display:flex;
+    margin-bottom: 20px;
+    background-color:lightblue;
+    text-decoration: none;
+    
+
+}
+button:hover{
+    box-shadow:0 8px 6px -6px red ;
+}
+
+.fa-crosshairs
+{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* wheather page */
+
+#searchbtn{
+    box-shadow:0 8px 6px -6px #000  ;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+.main_content{
+    margin-top: 15px;
+    border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    background-color:lightslategray;
+    
+}
+#CityName{
+    width: 200px;
+    height: 50px;
+}
+#searchbtn{
+    width: 100px;
+    height: 50px;
+}
+.temp_form{
+    margin-bottom: 20px;
+    }
+
+.tempinformation{
+    margin-top: 15px;
+    /* border: 1px solid ; */
+    display: flex;
+    justify-content: center;
+    width:auto;
+    height: 200px;
+}    
+.top_layer{
+    /* border: 1px solid ; */
+    margin-right: 25px;
+    width: 200px;
+}
+.main_layer{
+    /* border: 1px solid ; */
+    margin-left: 25px;
+    width: 200px;
+}
+#day{
+    font-size:x-large;
+    padding-left:15px;
+}
+#today_date{
+    font-size:x-large;
+    padding-left:15px;
+}
+#temp{
+    font-size: x-large;
+}
+#temp_status{
+font-size: xxx-large;
+/* background-color: black; */
+}
+#city_name{
+font-size: x-large;
+}
+ .data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+} 
+
+
+
